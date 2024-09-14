@@ -101,32 +101,6 @@ Widget formField({
       ),
     );
 
-PreferredSize defaultAppBar({
-  required BuildContext context,
-  String? label,
-  List<Widget>? actions,
-}) {
-  return PreferredSize(
-    preferredSize: const Size.fromHeight(kToolbarHeight),
-    child: AppBar(
-      leading: IconButton(
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        icon: const Icon(
-          IconlyBroken.arrowLeft2,
-        ),
-      ),
-      title: Text(
-        label ?? '',
-        style: const TextStyle(fontSize: 23.0),
-      ),
-      actions: actions,
-      titleSpacing: 0.0,
-    ),
-  );
-}
-
 Widget databaseList(Map map, context) => Dismissible(
       key: Key(map['id'].toString()),
       child: Padding(
