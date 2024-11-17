@@ -31,7 +31,6 @@ ThemeData lightTheme = ThemeData(
       color: Colors.black,
     ),
   ),
-  floatingActionButtonTheme:
-      FloatingActionButtonThemeData(foregroundColor: Colors.white),
+  floatingActionButtonTheme: FloatingActionButtonThemeData(foregroundColor: Colors.white),
   fontFamily: 'Jannah',
 );
